@@ -29,11 +29,7 @@ onUnmounted(() => window.removeEventListener('scroll', updateScrollState))
   <header class="site-header" :class="{ scrolled: isScrolled }">
     <div class="shell header-inner">
       <RouterLink class="brand" to="/" aria-label="回到首页" @click="isMenuOpen = false">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span class="brand-copy">
-          <strong>首佳文创</strong>
-          <small>SHOUJIA CULTURE</small>
-        </span>
+        <img class="brand-logo" src="/assets/logo.png" alt="首佳文创 Shoujia Cultural And Creative" />
       </RouterLink>
 
       <nav class="desktop-nav" aria-label="主导航">

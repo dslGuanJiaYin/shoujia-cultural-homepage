@@ -53,7 +53,9 @@ h2 em { font-family: var(--display); font-weight: 500; }
 .site-header { position: fixed; z-index: 20; top: 0; left: 0; width: 100%; color: #fff; background: linear-gradient(to bottom, rgba(8, 15, 12, .5), transparent); }
 .site-header.scrolled { background: rgba(30, 40, 36, .96); box-shadow: 0 1px 0 rgba(255, 255, 255, .12); backdrop-filter: blur(16px); }
 .header-inner { display: flex; align-items: center; height: 88px; }
-.brand { display: inline-flex; align-items: center; gap: 12px; padding: 0; border: 0; color: inherit; background: transparent; text-align: left; }
+.brand { display: inline-flex; align-items: center; padding: 0; border: 0; color: inherit; background: transparent; text-align: left; }
+.brand-logo { display: block; width: 188px; aspect-ratio: 10 / 3; object-fit: cover; }
+.site-header .brand-logo { filter: drop-shadow(0 0 3px rgba(255, 255, 255, .82)); }
 .brand-mark { display: inline-flex; align-items: flex-end; gap: 3px; height: 24px; }
 .brand-mark i { display: block; width: 4px; height: 15px; background: var(--green); transform: skew(-22deg); }
 .brand-mark i:nth-child(2) { height: 22px; background: #f6f4eb; }
@@ -247,11 +249,15 @@ h2 em { font-family: var(--display); font-weight: 500; }
 .directory-work-meta svg { margin-top: 2px; color: #858980; }
 .contact-form-section { padding-bottom: 160px; }
 .contact-page-layout { display: grid; grid-template-columns: .7fr 1.3fr; gap: 110px; }
-.contact-page-details { display: flex; flex-direction: column; gap: 28px; }
+.contact-page-details { display: flex; flex-direction: column; gap: 24px; }
+.contact-brand { width: min(310px, 100%); margin-bottom: 12px; }
+.contact-brand img { display: block; width: 100%; aspect-ratio: 10 / 3; object-fit: cover; }
 .contact-page-line { display: flex; align-items: flex-start; gap: 15px; color: var(--green-deep); }
 .contact-page-line span { display: flex; flex-direction: column; gap: 7px; }
 .contact-page-line small { color: #85877f; font-size: 10px; letter-spacing: .1em; }
 .contact-page-line strong { color: var(--ink); font-size: 15px; font-weight: 500; }
+.contact-page-value { color: var(--ink); font-size: 15px; font-weight: 500; }
+.contact-page-value:hover { color: var(--green-deep); }
 .contact-page-form { max-width: 620px; }
 .contact-page-form form { display: grid; gap: 24px; }
 .contact-page-form label { display: grid; gap: 9px; color: #777970; font-size: 11px; letter-spacing: .08em; }
@@ -277,14 +283,15 @@ h2 em { font-family: var(--display); font-weight: 500; }
 .contact-line { display: flex; align-items: flex-start; gap: 18px; color: var(--green); }
 .contact-line span { display: flex; flex-direction: column; gap: 7px; }
 .contact-line small { color: rgba(245,243,234,.46); font-size: 10px; letter-spacing: .12em; }
-.contact-line strong { color: #f5f3ea; font-size: 15px; font-weight: 500; }
+.contact-line strong, .contact-line a { color: #f5f3ea; font-size: 15px; font-weight: 500; }
+.contact-line a:hover { color: var(--green); }
 .contact-orbit { position: absolute; right: 40px; bottom: -30px; display: grid; place-items: center; width: 170px; height: 170px; border: 1px solid rgba(169,199,142,.38); border-radius: 50%; color: var(--green); font-family: var(--display); font-size: 19px; line-height: 1.25; text-align: center; transform: rotate(-15deg); }
 
 /* Footer */
 .site-footer { color: var(--ink); background: var(--green); }
 .footer-top { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; min-height: 115px; }
-.footer-brand { display: inline-flex; align-items: center; gap: 12px; font-size: 16px; letter-spacing: .08em; }
-.footer-brand .brand-mark i:nth-child(2) { background: var(--ink); }
+.footer-brand { display: inline-flex; align-items: center; }
+.footer-logo { display: block; width: 188px; aspect-ratio: 10 / 3; object-fit: cover; }
 .footer-top > p { margin: 0; color: rgba(41,43,40,.72); font-family: var(--display); font-size: 17px; font-style: italic; }
 .footer-links { display: flex; justify-content: flex-end; gap: 24px; }
 .footer-links a { display: inline-flex; align-items: center; gap: 8px; color: rgba(41,43,40,.72); font-size: 11px; }

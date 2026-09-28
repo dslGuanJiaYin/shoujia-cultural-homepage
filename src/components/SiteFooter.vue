@@ -9,7 +9,7 @@ function scrollTop() {
 <template>
   <footer class="site-footer">
     <div class="shell footer-top">
-      <div class="footer-brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><strong>首佳文创</strong></div>
+      <div class="footer-brand"><img class="footer-logo" src="/assets/logo.png" alt="首佳文创 Shoujia Cultural And Creative" /></div>
       <p>把文化，做成生活里值得留下的东西。</p>
       <div class="footer-links"><a href="https://www.xiaohongshu.com/explore/6aabddd800000000290172df?xsec_token=CBDqoRSVx1Unx0EK3Qa2ZqjHOSEnxWzgC0C0Lb96q9ucE=&xsec_source=h5_share" target="_blank" rel="noreferrer"><Instagram :size="16" /> 小红书</a><a href="/assets/shoujia-ip-brief.pdf" target="_blank" rel="noreferrer"><Star :size="16" /> 品牌手册</a></div>
     </div>
